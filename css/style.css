@@ -1,0 +1,62 @@
+
+body { 
+ background-image: linear-gradient(to right,rgb(36, 14, 99),rgb(53, 3, 41));
+ color: var(--tex-color);
+ width: 100%;
+ height: 100%;
+ margin: 0 auto;
+
+}
+
+.menu-principal {
+ width: 100%;
+ background-color: #000000;
+ height: 60px;
+}
+
+.menu ul li a:hover {
+    color:#d59ce1;
+    
+    
+}
+
+.menu ul li {
+
+display: inline-block;
+color:#000000;
+margin-left: 15px;
+}
+
+.menu ul li a {
+    font-family: sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+      
+}
+
+.menu{
+    width: 70%;
+}
+.slider-principal {
+    /* Defina a cor de fundo do corpo */
+    
+    margin: 0; /* Remover margens padrão do body */
+    padding: 0; /* Remover padding padrão do body */
+    height: 100vh; /* Faz com que o corpo ocupe toda a altura da tela */
+    display: flex;
+    justify-content: flex-end; /* Alinha o conteúdo ao final do flex container (lado direito) */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.image-container {
+    /* Adiciona margem à direita para afastar a imagem do canto */
+    margin-right: 20px; /* Altere o valor conforme necessário */
+}
+
+img {
+    max-width: 100%; /* Garantir que a imagem não ultrapasse a largura do seu contêiner */
+    height: auto; /* Manter a proporção da imagem */
+}
+ 
+ 
