@@ -4,57 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <!-- or -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
   
     <title>RECIFE PHONE</title>
 </head>
 
 <body>
-<main>
-    
-<header class="menu-principal">
-    <main>
-<div class="header-1">
-    <div class="logo">
-<img src="/img/logo png.png" alt="logo principal">
 
-</main>
-</div>
+<header >
+<a href="#" class="logo"><i class='bx bx-infinite' ></i>RecifePhone</a>
 
-</header>   
-<main>
-    <div class="header-2">
-    <div class="menu">
-    <ul>
-    <li>
-         <a href="">Home</a>
-        </li>
-    <li> 
-        <a href="">Produtos</a>
-    </li>
-    </ul>
-    
+<ul class="navegação">
+<li><a href="#"> Home</a></li>
+<li><a href="#">Produtos</a></li>
+<li><a href="#">Sobre nós</a></li>
+</ul>
 
-</div>
-</div>
-</main> 
-<div class="container">
-    <div class="text-section">
-        <p class="text1"> TITÂNIO</p>
-        <p class="text2"> iPhone15 Pro Max</p>
-        <p class="text3">256GB</p>
-        <p class="textmenor">R$ 10.999,00</p>
-        <p class="textmaior"> 8499,00 no PIX</p>
-    </div>
-    
-    <div class="image-section">
-        <img src="img/todosipho.png" alt="Imagemiphone">
-    </div>
-</div>
-<div class="container2">
-    <input type="submit" value="Comprar">
-</div>
+<!--  carrinho de compras e o menu  -->
+<div class="header-icons">
+<i class='bx bx-cart'></i>
+<div id="menu"><i class='bx bx-menu'></i></div>
+</div> <!-- header-icons -->
+</header>
+<section class="home">
+<div class="home-img">
+<img src="img/iphone png.png"  class="one">
+</div> <!-- home img -->
+
+<div class="home-text">
+<h1>Apple Titânio <br> iPhone 15 Pro Max</h1>
+<h4>256GB </h4>
+<h2>8.299,00 no pix</h2>
+<h6>ou 12x de R$ 768,43 </h6>
+<a href="#" class="btn">Comprar agora</a> 
+
+</div> <!-- home-text -->
+</section> <!-- home -->
+
+<div class="main">
+<div class="row">
+ <li><img src="img/iphonepretomenor png 2.png" alt="iphonepreto" onclick="slider('produto1.png')"></li>
+</div> <!-- row -->
+
+<div class="row2">
+    <li> <img src="img/iphone15brancomenor 1.png" alt="iphonebranco" onclick="slider('produto2.png')"></li>
+   </div> <!-- row2 -->
+
+   <div class="row3">
+    <li> <img src="img/iphonepretomenor png 1.png" alt="iphoneazul" onclick="slider('produto3.png')"></li>
+   </div> <!-- row3 -->
+      
+
+</div> <!--  3 imagens iphone 15 -->
 
 
+<!-- js esta dando errado -->
+  <script>
+    function slider (anything){
+        document.querySelector ('.one') .src = anything;
+    };
+
+   let menu = document.querySelector ('#menu-icon');
+   let navbar = document.querySelector ('.navbar');
+
+   menu.onclick = () => {
+    menu.classList.toggle ('bx-x');
+    navbar.classList.toggle ('open');
+   }
+</script>
+
+   
+</script>
 </body>
+
 </main>
 </html>
