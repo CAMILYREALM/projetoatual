@@ -12,7 +12,7 @@
   href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-  
+
     <title>RECIFE PHONE</title>
 </head>
 
@@ -35,7 +35,7 @@
 </header>
 <section class="home">
 <div class="home-img">
-<img src="img/iphone png.png"  class="one">
+<img src="img/produto1.png" class="one">
 </div> <!-- home img -->
 
 <div class="home-text">
@@ -43,44 +43,148 @@
 <h4>256GB </h4>
 <h2>8.299,00 no pix</h2>
 <h6>ou 12x de R$ 768,43 </h6>
-<a href="#" class="btn">Comprar agora</a> 
+<a href="#" class="btn">Comprar agora</a>
 
 </div> <!-- home-text -->
 </section> <!-- home -->
 
 <div class="main">
 <div class="row">
- <li><img src="img/iphonepretomenor png 2.png" alt="iphonepreto" onclick="slider('produto1.png')"></li>
-</div> <!-- row -->
+ <li><img src="img/iphonepretomenor png 2.png" alt="iphonepreto" onclick="slider('img/produto1.png')"></li>
+</div><!-- row -->
 
 <div class="row2">
-    <li> <img src="img/iphone15brancomenor 1.png" alt="iphonebranco" onclick="slider('produto2.png')"></li>
+    <li><img src="img/iphone15brancomenor 1.png" alt="iphonedourado" onclick="slider('img/iphone15dourado.png')"></li>
    </div> <!-- row2 -->
 
    <div class="row3">
-    <li> <img src="img/iphonepretomenor png 1.png" alt="iphoneazul" onclick="slider('produto3.png')"></li>
+    <li> <img src="img/iphonepretomenor png 1.png" alt="iphoneazul" onclick="slider('img/produto3a.png')"></li>
    </div> <!-- row3 -->
-      
+
 
 </div> <!--  3 imagens iphone 15 -->
 
 
-<!-- js esta dando errado -->
+ <!-- inicio mostrando os produtos - segunda pag -->
+<div class="categorias">
+
+  <h2 class="titulo2">Nossos produtos</h2>
+
+<div class="corpo-categorias">
+  
+
+<div class="linha">
+
+<div class="col-3">
+  <img src="img/fone2.png" alt="fone">
+</div>
+
+<div class="col-3">
+ <img src="img/mac.png" alt="relogio">
+</div>
+
+<div class="col-3">
+  <img src="img/phonecarroussel.png" alt="iphone">
+</div>
+
+</div>
+</div>
+</div>
+<!-- fim categorias segunda pag -->
+
+
+
+
+<div class="produto">
+<h2 class="titulo">Produtos em destaque</h2>
+
+
+<div class="linha">
+<!-- inicio dos produtos em destaque -->
+
+    <div class="col-4">
+
+   <img src="img/iphone15dourado 1.png" alt="">
+    <h4> Apple iPhone 15 Pro 256GB - Dourado</h4>
+    <p><b> R$ 8.299,00 </b></p>
+    <h6>ou em 12X de R$ 768,43</h6>
+
+   </div> <!-- coluna -->
+
+
+    <div class="col-4">
+
+     <img src="img/iphone15dourado 1.png" alt="">
+     <h4> Apple Watch Series 9 – 41 mm </h4>
+     <p><b> R$ 3.899,00 </b></p>
+     <h6>ou 12X de R$ 361,02</h6>
+
+  </div> <!-- coluna -->
+
+  
+  <div class="col-4">
+
+        <img src="img/iphone15dourado 1.png" alt="">
+       <h4>Apple AirPods (2ª geração)</h4>
+       <p><b> R$ 1.199,00 </b></p>
+       <h6> ou 12X de R$ 111,02</h6>
+
+    </div>
+    
+   
+
+    
+  <div class="col-4">
+
+           <img src="img/iphone15dourado 1.png" alt="">
+           <h4>Macbook Pro A2141 Core I7</h4>
+             <p><b> R$ 6.699,00 </b></p>
+             <h6> ou 10X de R$ 669,90 </h6>
+     
+            </div>
+      
+  
+
+      <div class="col-4">
+
+          <img src="img/iphone15dourado 1.png" alt="">
+           <h4>Apple iPhone 15 256GB - Branco</h4>
+            <p><b> R$ 7.299,00</b></p>
+             <h6> ou 12X de R$ 608,25</h6>
+        
+            </div>
+
+    
+
+
+
+        <div class="col-4">
+          <img src="img/iphone15dourado 1.png" alt="">
+          <h4>Apple iPhone 14 Plus 128GB - Azul</h4>
+          <p><b> R$ 4.299,00</b></p>
+          <h6> ou 12X de R$ 398,06 </h6>
+  
+          </div> <!-- coluna --> 
+          
+
+      </div>
+      </div>
+      
+
+
+
+
+
+<!-- js linkado -->
   <script>
     function slider (anything){
         document.querySelector ('.one') .src = anything;
     };
 
-   let menu = document.querySelector ('#menu-icon');
-   let navbar = document.querySelector ('.navbar');
 
-   menu.onclick = () => {
-    menu.classList.toggle ('bx-x');
-    navbar.classList.toggle ('open');
-   }
 </script>
 
-   
+
 </script>
 </body>
 
